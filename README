@@ -1,0 +1,20 @@
+Free Block Browser
+Watch free blocks and fragmentation of your harddisk
+
+## Warning:
+ USE AT YOUR OWN RISK
+ While using this tools, your device files will be accessed with root privileges. 
+ 
+## How to use:
+ * run "create_scheme_file.py" in order to create a scheme file for a given device
+ * use pypy or psyco in order to speed the script up for large devices
+ * in order to actually browse the free blocks, adjust this line in blockbrowser.py:
+	self.scheme_file = zero_one_scheme_file("sda3_1.01")
+   here you need to insert the scheme_file, you've created before.
+ * now run "blockbrowser.py"
+
+## Requires:
+ * dumpe2fs
+ * debugfs
+ * GTK
+
